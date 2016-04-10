@@ -15,7 +15,6 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier: identifier];
-    
     //        vc.modalPresentationStyle = UIModalPresentationFormSheet;
     //
     //        UIPopoverPresentationController *popover = [vc popoverPresentationController];
@@ -24,14 +23,13 @@
     //        [self presentViewController:vc animated:true completion:nil];
     
     UINavigationController *modalViewNavController = [[UINavigationController alloc] initWithRootViewController:vc];
-
+    
     //modalViewNavController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    modalViewNavController.modalPresentationStyle = UIModalPresentationFormSheet;
     
     [self presentViewController:modalViewNavController animated:YES completion:nil];
 }
 
-- (int)mobileType { 
+- (int)mobileType {
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
         

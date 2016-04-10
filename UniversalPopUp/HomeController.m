@@ -20,9 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"viiew");
     type = [self mobileType];
-    NSLog(@"%d",type);
 }
 
 - (IBAction)SettingsButton:(id)sender {

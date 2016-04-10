@@ -12,9 +12,9 @@
 @interface SettingController : UITableViewController
 
 {
-    NSMutableArray *data;
+    
     NSMutableArray *keyData;
-    NSMutableArray *sectionTitle;
+    NSMutableArray *appearanceData;
     NSMutableArray *aboutData;
     NSMutableArray *keyBoard ;
     NSInteger section1;

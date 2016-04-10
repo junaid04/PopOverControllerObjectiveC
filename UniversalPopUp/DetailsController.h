@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailsController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
+@interface DetailsController : UITableViewController {
    
     NSMutableArray *tableData;
     NSInteger section2;

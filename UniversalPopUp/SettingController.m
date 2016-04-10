@@ -24,9 +24,8 @@
     
     type = [self mobileType];
     
-    sectionTitle = [[NSMutableArray alloc]initWithObjects:@"SECURITY",@"TERMINAL",@"INFO", nil];
-    data = [[NSMutableArray alloc]initWithObjects:@[@"Keys"],@[@"Appearance",@"Keyboard"],@[@"About"], nil];
     keyData = [[NSMutableArray alloc]initWithObjects:@"Key 1",@"Key 2",@"Key 3", nil];
+    appearanceData  = [[NSMutableArray alloc]initWithObjects:@"Appearance",@"Appearance",@"Appearance", nil];
     aboutData = [[NSMutableArray alloc]initWithObjects:@"About Me",@"About You",@"About Us", nil];
     keyBoard = [[NSMutableArray alloc]initWithObjects:@"KB 1",@"KB 2",@"KB 3",@"KB 4", nil];
     
@@ -65,9 +64,18 @@
     if (section1 == 0) {
         destinationViewController.itemDetails = keyData;
     }
-    else if (section1 == 1)
+    else if (section1 == 1 && row == 0)
     {
+        destinationViewController.itemDetails = appearanceData;
+    }
+    else if (section1 == 1 && row == 1)
+    {
+        destinationViewController.itemDetails = keyBoard;
+    }
+    else {
+        
         destinationViewController.itemDetails = aboutData;
+    
     }
     
 }
