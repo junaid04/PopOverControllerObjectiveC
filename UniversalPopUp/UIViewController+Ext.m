@@ -26,6 +26,7 @@
     
     //modalViewNavController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
+     modalViewNavController.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:modalViewNavController animated:YES completion:nil];
 }
 
